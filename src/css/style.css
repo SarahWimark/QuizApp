@@ -1,0 +1,203 @@
+body {
+    background-color: #eeeeee;
+}
+
+.grid {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #99ddff;
+    padding: 10px;
+    /* border-radius: 30px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 5px 10px 5px #cbcbcb; */
+}
+
+.grid h1 {
+    height: 150px;
+    font-family: cursive;
+    /* background-image: url(/image/banner.jpg); */
+    font-size: 80px;
+    text-align: center;
+    /* color: #fff; */
+    /* text-shadow: 2px 2px #666; */
+    padding: 5px;
+    font-style: bold;
+    /* border-radius: 20px;
+    box-shadow: 5px 5px 8px #888888;   */
+}
+
+#question {
+    font-family: cursive;
+    font-size: 30px;
+}
+
+#noAnswer {
+    font-family: cursive;
+    font-size: 40px;
+    color: rgb(199, 5, 5);
+}
+
+.buttons {
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px
+}
+
+#questionBtn {
+    background-color: #0ec971;
+    width: 250px;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 auto;
+    border: 1px solid #0ec971;
+    font-style: bold;
+}
+
+#answerTxt,
+#nameTxt {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 230px;
+}
+
+#scoreContainer {
+    text-align: center;
+    width: 15%;
+    height: 220px;
+    margin-left: 40px;
+    font-size: 20px;
+    float: left;
+    background: #000;
+    color: #fff;
+}
+
+#scores {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#timerContainer {
+    width: 100px;
+    ;
+    margin: auto;
+}
+
+
+input[type=submit] {
+    font-style: italic;
+    width: 250px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid black;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.altBtn {
+    background-color: rgb(20, 72, 216);
+    width: 250px;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1d3c6a;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+}
+
+
+.active,
+.altBtn:hover {
+    background-color: #808080;
+    cursor: pointer;
+}
+
+.altBtn:focus {
+    outline: 0;
+}
+
+#questionBtn:hover {
+    background-color: #12d3b9;
+    border: 1px solid #12d3b9;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #414241;
+    cursor: pointer;
+}
+
+#questionBtn:focus,
+input[type=submit]:focus,
+#answerTxt:focus {
+    outline: 0;
+}
+
+#progress {
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    background: #11999E;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#quiz {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    #scoreContainer {
+        width: 100%;
+        margin: 0px;
+        position: fixed;
+        top: 0px;
+        z-index: 10;
+    }
+
+    .grid {
+        width: 100%;
+        position: absolute;
+        float: right;
+        top: 230px;
+        overflow: scroll;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .grid h1 {
+        height: auto;
+        font-size: 20px;
+    }
+
+    #progress {
+        font-size: 20px;
+        background: #99ddff;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    input[type=submit],
+    #answerTxt,
+    #nameTxt,
+    #questionBtn {
+        width: 50%;
+    }
+}

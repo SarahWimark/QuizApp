@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="scoreContainer">
+        <h2>High Scores</h2>
+        <ol id="scores"></ol>
+    </div>
+    <div class="grid">
+        <div id="quiz">
+            <h1>Javascript Quiz</h1>
+            <div id="timerContainer">
+                <p id="progress">20</p>
+            </div>
+            <input id="nameTxt" type="text" placeholder="Enter a nickname">
+            <button id="questionBtn">Start Quiz</button>
+            <p id="noAnswer"></p>
+            <p id="question"></p>
+            <div class="buttons">
+            </div>
+            <form id="answerForm">
+                <div>
+                    <input type="text" id="answerTxt" placeholder="Write your answer">
+                </div>
+                <input id="submitBtn" type="submit" value="Submit answer">
+            </form>
+        </div>
+    </div>
+
+    <script src="build.js"></script>
+</body>
+
+</html>
